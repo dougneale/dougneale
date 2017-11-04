@@ -19,7 +19,8 @@ jobs:
       - run: yarn test
       - run: yarn run build
       - persist_to_workspace:
-          root: ~/repo/build
+          paths: 
+            - build
   deploy:
     docker:
       - image: circleci/python:2.7
