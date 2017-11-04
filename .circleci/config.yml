@@ -34,7 +34,9 @@ jobs:
           command: sudo pip install awscli
       - run:
           name: Deploy to S3 if tests pass and branch is Master
-          command: aws s3 sync build s3://dougneale/ --delete
+          command: aws s3 sync build s3://dougneale.com/ --delete
+      - run:
+          command: aws s3 sync build s3://www.dougneale.com/ --delete
           
 
 workflows:
