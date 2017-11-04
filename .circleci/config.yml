@@ -28,7 +28,12 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
         
-      # run tests!
       - run: yarn test
+      - run: yarn run build
+  deployment:
+    prod:
+      branch: master
+      commands:
+        - aws s3 sync build s3://dougneale.s3-website-ap-southeast-2.amazonaws.com --delete
 
 
