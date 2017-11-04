@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build:
+  bbuild:
     docker:
       - image: circleci/node:7.10
     working_directory: ~/repo
@@ -18,12 +18,31 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: yarn test
       - run: yarn run build
+      - persist_to_workspace:
+          root: ~/repo/build
+  deploy:
+    docker:
+      - image: circleci/python:2.7
+    working_directory: ~/repo  
+    steps:
+      - attach_workspace:
+          at: ~/repo/build
+      - run:
+          name: Install awscli
+          command: sudo pip install awscli
+      - run:
+          name: Deploy to S3 if tests pass and branch is Master
+          command: aws s3 sync build s3://dougneale.s3-website-ap-southeast-2.amazonaws.com --delete
+          
 
-dependencies:
-    override:
-        - sudo pip install awscli
-deployment:
-  prod:
-    branch: master
-    commands:
-      - aws s3 sync build s3://dougneale.s3-website-ap-southeast-2.amazonaws.com --delete
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
