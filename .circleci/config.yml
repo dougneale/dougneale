@@ -21,14 +21,14 @@ jobs:
       - persist_to_workspace:
           root: ~/repo
           paths: 
-            - build
+            - persist
   deploy:
     docker:
       - image: circleci/python:2.7
     working_directory: ~/repo/  
     steps:
       - attach_workspace:
-          at: ~/repo/build
+          at: ~/repo/persist/build
       - run:
           name: Install awscli
           command: sudo pip install awscli
