@@ -37,7 +37,4 @@ workflows:
           filters:
             branches:
               only: master
-            
-v
-
 
