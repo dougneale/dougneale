@@ -35,10 +35,17 @@ export default styled(App)`
     & span {
       font-size: 1em;
     }
+
+    @media screen and (max-width: 720px) {
+      font-size: 4em;
+    }
   }
   h2 {
     font-size: 1.4em;
     margin-bottom: 1em;
+    @media screen and (max-width: 720px) {
+      font-size: 1.2em;
+    }
   }
   a {
     text-decoration: none;
