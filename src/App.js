@@ -23,10 +23,18 @@ const App = ({className}) => (
 export default styled(App)`
   margin: auto;
   padding: 5em;
+
+  @media screen and (max-width: 720px) {
+    padding: 1em 3em;
+  }
   max-width: 800px;
   h1 {
     font-size: 5em;
     margin: 0;
+    
+    & span {
+      font-size: 1em;
+    }
   }
   h2 {
     font-size: 1.4em;
