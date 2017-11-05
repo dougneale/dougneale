@@ -5,12 +5,12 @@ const App = ({className}) => (
   <div className={className}>
     <h1> I'm Doug Neale 🤝</h1>
     <hr />
-    <h2> I'm a technologist <i>👨‍💻</i> at <a href="https://www.thoughtworks.com/about-us">Thoughtworks</a></h2>    
+    <h2> I'm a technologist <i>👨‍💻</i> at <a href="https://www.thoughtworks.com/about-us">ThoughtWorks</a></h2>    
     <h2> I lived in Brisbane<i>🌞</i> I moved to Melbourne <i>🚋</i></h2>
     <h2> Then I started doing improv comedy at <a href="http://improvconspiracy.com">The Improv Conspiracy <i>🎭</i></a></h2>
     <h2> I create <a href="https://www.youtube.com/channel/UCVzstBi1Nf5DTlBoc2ioRYg/videos">sketch videos <i>📹</i></a> and produce <a href="https://soundcloud.com/doug-neale">music <i>🎹</i></a> </h2>
     <h2> I also like to tinker on <a href="https://github.com/dneale">projects</a> like <a href="http://convergence.dougneale.com">Convergence With A Computer <i>🤖</i></a></h2>
-    <h2> I've written <a href="https://www.themanufacturer.com/author/doug-neale/">some articles <i>⌨️</i></a> at The Manufacturer </h2>
+    <h2> I've written <a href="https://www.themanufacturer.com/author/doug-neale/">some articles <i>📰</i></a> at The Manufacturer </h2>
     <h3> Find me on 
       <a href="https://twitter.com/dougneale"> Twitter</a>,     
       <a href="https://www.linkedin.com/in/dougneale"> LinkedIn</a>, 
