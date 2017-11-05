@@ -37,7 +37,7 @@ export default styled(App)`
     }
 
     @media screen and (max-width: 720px) {
-      font-size: 4em;
+      font-size: 3em;
     }
   }
   h2 {
