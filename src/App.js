@@ -7,7 +7,7 @@ const App = ({className}) => (
     <hr />
     <h2> I'm a technologist at <a href="https://www.thoughtworks.com/about-us">ThoughtWorks <span role="img" aria-label="male technologist">👨‍💻</span></a></h2>    
     {/* <h2> I lived in Brisbane<span role="img" aria-label="sun">🌞</span> I moved to Melbourne <span role="img" aria-label="tram">🚋</span></h2> */}
-    <h2> I do improv comedy at <a href="http://improvconspiracy.com">The Improv Conspiracy <span role="img" aria-label="drama">🎭</span></a></h2>
+    <h2> I do improv comedy at <a href="https://improvconspiracy.com/performers/doug-neale">The Improv Conspiracy <span role="img" aria-label="drama">🎭</span></a></h2>
     <h2> I create <a href="https://www.youtube.com/channel/UCVzstBi1Nf5DTlBoc2ioRYg/videos">sketch videos <span role="img" aria-label="camcorder">📹</span></a> and produce <a href="https://soundcloud.com/doug-neale">music <span role="img" aria-label="musical keyboard">🎹</span></a> </h2>
     <h2> I also like to tinker on <a href="https://github.com/dneale">projects <i className="em em-octocat"></i></a> like <a href="http://convergence.dougneale.com">Convergence With A Computer <span role="img" aria-label="robot face">🤖</span></a></h2>
     <h2> I've written some articles <a href="https://www.themanufacturer.com/author/doug-neale/">at The Manufacturer <span role="img" aria-label="newspaper">📰</span></a></h2>
