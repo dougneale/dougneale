@@ -19,13 +19,13 @@ const links = {
 
 const App = ({className}) => (
   <div className={className}>
-    <h2>Hi I'm Doug Neale 🤝 and I...</h2>
-    <h3>...do <a href={links.standup}>stand up</a> and <a href={links.improv}>improv</a> comedy in Melbourne. 🎭 </h3>
-    <h3>...make <a href={links.videos}>videos</a> 📹 </h3>
-    <h3>...write <a href={links.songs}>songs</a> and play drums for the <a href={links.ld50s}>LD50's</a> 🎹</h3>
-    <h3>...write articles like <a href={links.tribeArticles}>these</a> and <a href={links.manufacturer}>these</a> 📰</h3>
-    <h3>...am a <a href={links.linkedin}>software developer</a> at <a href={links.tribe}>Tribe</a> 👨‍💻</h3>
-    <h3>...created a game called <a href={links.convergence}>Convergence with a Computer 🤖</a></h3>
+    <h2>Hi I'm Doug Neale <span role="img">🤝</span> and I...</h2>
+    <h3>...do <a href={links.standup}>stand up</a> and <a href={links.improv}>improv</a> comedy in Melbourne. <span role="img">🎭</span> </h3>
+    <h3>...make <a href={links.videos}>videos</a> <span role="img">📹</span> </h3>
+    <h3>...write <a href={links.songs}>songs</a> and play drums for the <a href={links.ld50s}>LD50's</a> <span role="img">🎹</span></h3>
+    <h3>...write articles like <a href={links.tribeArticles}>these</a> and <a href={links.manufacturer}>these</a> <span role="img">📰</span></h3>
+    <h3>...am a <a href={links.linkedin}>software developer</a> at <a href={links.tribe}>Tribe</a> <span role="img">💻</span></h3>
+    <h3>...created a game called <a href={links.convergence}>Convergence with a Computer </a><span role="img">🤖</span></h3>
     <h3>...have <a href={links.facebook}>facebook</a>, <a href={links.instagram}>instagram</a> and <a href={links.twitter}>twitter</a> </h3>
   </div>
 )
