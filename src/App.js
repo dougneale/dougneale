@@ -1,22 +1,32 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const links = {
+  standup: 'https://www.facebook.com/futuredoug/',
+  improv: 'https://improvconspiracy.com/performers/doug-neale',
+  ld50s: 'https://www.instagram.com/ld50s/',
+  videos: 'https://vimeo.com/dougneale',
+  songs: 'https://soundcloud.com/doug-neale',
+  convergence: 'http://convergence.dougneale.com',
+  manufacturer: 'https://www.themanufacturer.com/author/doug-neale/',
+  tribeArticles: 'https://www.tribegroup.co/blog/author/doug-neale?',
+  tribe: 'https://www.tribegroup.co',
+  twitter: 'https://twitter.com/dougneale',
+  linkedin: 'https://www.linkedin.com/in/dougneale',
+  facebook: 'https://facebook.com/dougneale',
+  instagram: 'https://instagram.com/dougneale'
+}
+
 const App = ({className}) => (
   <div className={className}>
-    <h1> I'm Doug Neale <span role="img" aria-label="handshake">🤝</span></h1>
-    <hr />
-    <h2> I'm a technologist at <a href="https://www.thoughtworks.com/about-us">ThoughtWorks <span role="img" aria-label="male technologist">👨‍💻</span></a></h2>    
-    {/* <h2> I lived in Brisbane<span role="img" aria-label="sun">🌞</span> I moved to Melbourne <span role="img" aria-label="tram">🚋</span></h2> */}
-    <h2> I do improv comedy at <a href="https://improvconspiracy.com/performers/doug-neale">The Improv Conspiracy <span role="img" aria-label="drama">🎭</span></a></h2>
-    <h2> I create <a href="https://www.youtube.com/channel/UCVzstBi1Nf5DTlBoc2ioRYg/videos">sketch videos <span role="img" aria-label="camcorder">📹</span></a> and produce <a href="https://soundcloud.com/doug-neale">music <span role="img" aria-label="musical keyboard">🎹</span></a> </h2>
-    <h2> I also like to tinker on <a href="https://github.com/dneale">projects <i className="em em-octocat"></i></a> like <a href="http://convergence.dougneale.com">Convergence With A Computer <span role="img" aria-label="robot face">🤖</span></a></h2>
-    <h2> I've written some articles <a href="https://www.themanufacturer.com/author/doug-neale/">at The Manufacturer <span role="img" aria-label="newspaper">📰</span></a></h2>
-    <h3> Find me on 
-      <a href="https://twitter.com/dougneale"> Twitter</a>,     
-      <a href="https://www.linkedin.com/in/dougneale"> LinkedIn</a>, 
-      <a href="https://www.facebook.com/dougneale"> Facebook</a>, and 
-      <a href="https://www.instagram.com/thedouglyf/"> Instagram </a>
-    </h3>
+    <h2>Hi I'm Doug Neale 🤝 and I...</h2>
+    <h3>...do <a href={links.standup}>stand up</a> and <a href={links.improv}>improv</a> comedy in Melbourne. 🎭 </h3>
+    <h3>...make <a href={links.videos}>videos</a> 📹 </h3>
+    <h3>...write <a href={links.songs}>songs</a> and play drums for the <a href={links.ld50s}>LD50's</a> 🎹</h3>
+    <h3>...write articles like <a href={links.tribeArticles}>these</a> and <a href={links.manufacturer}>these</a> 📰</h3>
+    <h3>...am a <a href={links.linkedin}>software developer</a> at <a href={links.tribe}>Tribe</a> 👨‍💻</h3>
+    <h3>...created a game called <a href={links.convergence}>Convergence with a Computer 🤖</a></h3>
+    <h3>...have <a href={links.facebook}>facebook</a>, <a href={links.instagram}>instagram</a> and <a href={links.twitter}>twitter</a> </h3>
   </div>
 )
 
@@ -27,11 +37,11 @@ export default styled(App)`
   @media screen and (max-width: 720px) {
     padding: 1em 3em;
   }
-  max-width: 800px;
+  max-width: 900px;
   h1 {
     font-size: 5em;
     margin: 0;
-    
+
     & span {
       font-size: 1em;
     }
