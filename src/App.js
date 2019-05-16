@@ -20,6 +20,7 @@ const links = {
 const App = ({className}) => (
   <div className={className}>
     <h2>Hi I'm Doug Neale <span role="img" aria-label="emoji">🤝</span> and I...</h2>
+    <hr />
     <h3>...do <a href={links.standup}>stand up</a> and <a href={links.improv}>improv</a> comedy in Melbourne. <span role="img" aria-label="emoji">🎭</span> </h3>
     <h3>...make <a href={links.videos}>videos</a> <span role="img" aria-label="emoji">📹</span> </h3>
     <h3>...write <a href={links.songs}>songs</a> and play drums for the <a href={links.ld50s}>LD50's</a> <span role="img" aria-label="emoji">🎹</span></h3>
