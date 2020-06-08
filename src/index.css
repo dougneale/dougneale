@@ -9,7 +9,7 @@ body {
 
 .content {
   margin: auto;
-  padding: 5em;
+  padding: 2em 4em;
   max-width: 900px;
 }
 @media screen and (max-width: 720px) {
