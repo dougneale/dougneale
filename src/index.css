@@ -1,6 +1,61 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Francois One', sans-serif;
-  font-size: 18px;
+  font-family: 'Cardo', serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #222;
+}
+
+.content {
+  margin: auto;
+  padding: 5em;
+  max-width: 900px;
+}
+@media screen and (max-width: 720px) {
+  .content {
+    padding: 1em 3em !important;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  h1 {
+    font-size: 2.5em !important;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  img {
+    width: 100% !important;
+  }
+}
+
+img {
+  margin: 2em 0 1em 0;
+  width: 500px;
+}
+
+header {
+  text-align: center;
+}
+
+
+
+h1 {
+  font-size: 3em;
+  margin: 0;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: navy;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input[type="submit"] {
+  background-color: #d93025!important;
 }
